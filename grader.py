@@ -8,7 +8,7 @@
 #
 import os
 import sys
-import wget
+
 
 
 def test_01():
