@@ -114,11 +114,15 @@ def test_07():
 
 
 def test_08():
+    """realiza grafica precios promedios diarios"""
+    os.system("make make_daily_prices_plot")
     """Evalua figura precios diarios"""
     assert os.path.isfile("data_lake/business/reports/figures/daily_prices.png") is True
 
 
 def test_09():
+    """realiza grafica precios promedios mensuales"""
+    os.system("make make_monthly_prices_plot")
     """Evalua figura precios diarios"""
     assert (
         os.path.isfile("data_lake/business/reports/figures/monthly_prices.png") is True

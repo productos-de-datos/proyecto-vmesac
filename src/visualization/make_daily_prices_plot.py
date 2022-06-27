@@ -30,5 +30,5 @@ def make_daily_prices_plot():
 
 if __name__ == "__main__":
     import doctest
-    make_daily_prices_plot()
     doctest.testmod()
+    make_daily_prices_plot()
