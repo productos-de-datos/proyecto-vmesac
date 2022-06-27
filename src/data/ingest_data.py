@@ -15,8 +15,6 @@ def ingest_data():
     #url https://github.com/jdvelasq/datalabs/tree/master/datasets/precio_bolsa_nacional/xls
 
     import wget
-    #import os
-    #os.chdir('data_lake/landing')
 
     path = 'data_lake/landing'
 
