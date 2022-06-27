@@ -12,10 +12,15 @@ def make_forecasts():
 
 
     """
+
+    
+
+    return
+
     raise NotImplementedError("Implementar esta función")
 
 
 if __name__ == "__main__":
     import doctest
-
+    make_forecasts()
     doctest.testmod()

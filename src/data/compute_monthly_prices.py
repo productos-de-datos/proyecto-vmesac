@@ -17,6 +17,7 @@ def compute_monthly_prices():
     hourly_prices_df['mes'] = hourly_prices_df['fecha'].str[:7] + '-01'
     
     monthly_prices_df = hourly_prices_df.groupby('mes', as_index = False).mean()
+    monthly_prices_df.columns = ['fecha', 'precio']
     monthly_prices_df.to_csv('data_lake/business/precios-mensuales.csv', index=False)
 
     return

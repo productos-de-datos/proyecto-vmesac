@@ -6,10 +6,14 @@ def train_daily_model():
 
 
     """
+
+
+    return
+
     raise NotImplementedError("Implementar esta función")
 
 
 if __name__ == "__main__":
     import doctest
-
+    train_daily_model()
     doctest.testmod()

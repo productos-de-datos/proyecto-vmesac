@@ -12,10 +12,15 @@ def make_features():
     analizar y determinar las variables explicativas del modelo.
 
     """
+
+
+
+    return
+
     raise NotImplementedError("Implementar esta función")
 
 
 if __name__ == "__main__":
     import doctest
-
+    make_features()
     doctest.testmod()
