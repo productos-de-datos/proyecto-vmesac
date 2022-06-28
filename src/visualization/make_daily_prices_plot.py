@@ -18,7 +18,7 @@ def make_daily_prices_plot():
 
     plt.figure(figsize=(12, 8)) 
     plt.plot(x, y, label='Promedio Diario') 
-    plt.title('Promedio Diario') 
+    plt.title('Precio Promedio Diario') 
     plt.xlabel('Fecha') 
     plt.ylabel('Precio') 
     plt.savefig("data_lake/business/reports/figures/daily_prices.png") 

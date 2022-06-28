@@ -18,7 +18,7 @@ def make_monthly_prices_plot():
 
     plt.figure(figsize=(12, 8)) 
     plt.plot(x, y, label='Promedio Mensual') 
-    plt.title('Promedio Mensual') 
+    plt.title('Precio Promedio Mensual') 
     plt.xlabel('Fecha') 
     plt.ylabel('Precio') 
     plt.savefig("data_lake/business/reports/figures/monthly_prices.png") 

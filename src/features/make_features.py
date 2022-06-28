@@ -12,8 +12,16 @@ def make_features():
     analizar y determinar las variables explicativas del modelo.
 
     """
+    import pandas as pd
+    import numpy as np
+    
+    df_daily_prices = pd.read_csv('data_lake/business/precios-diarios.csv')
+    df_daily_prices['log_precio'] = np.log(df_daily_prices['precio'])
+    df_daily_prices['precio_lag_12'] = df_daily_prices.precio.shift(12)
+    df_daily_prices['log_precio_lag_12'] = np.log(df_daily_prices['precio_lag_12'])
 
 
+    df_daily_prices.to_csv('data_lake/business/features/precios-diarios.csv', index=False)
 
     return
 
