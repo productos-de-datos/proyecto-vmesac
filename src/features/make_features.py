@@ -21,7 +21,7 @@ def make_features():
     df_daily_prices['log_precio_lag_12'] = np.log(df_daily_prices['precio_lag_12'])
 
 
-    df_daily_prices.to_csv('data_lake/business/features/precios_diarios.csv', index=False)
+    df_daily_prices.to_csv('data_lake/business/features/precios-diarios.csv', index=False)
 
     return
 
