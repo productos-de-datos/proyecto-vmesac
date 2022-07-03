@@ -1,3 +1,10 @@
+'''
+Documentación train_daily_model(): se hace uso del archivo de precios diarios con los features, se limpian los valores faltantes
+y se defininen los X y y para el entrenamiento del modelo. Se hace uso de una red neuronal para pronosticar la serie
+de tiempo con base en la variable transformada (logaritmo del precio 12 días atrás), se ajusta el modelo y se guarda suando la libreria pickle
+
+'''
+
 def train_daily_model():
     """Entrena el modelo de pronóstico de precios diarios.
 
@@ -29,8 +36,8 @@ def train_daily_model():
         )
 
     # Entrenamiento
-    mlp.fit(X, y)  
-    # mlp.fit(X[:7000], y[:7000])   # en caso de tomar solo mustra de entrenamiento
+    #mlp.fit(X, y)  
+    mlp.fit(X[:7000], y[:7000])   # en caso de tomar solo mustra de entrenamiento
 
     # Salvar modelo .pkl
     pickle.dump(mlp, open('src/models/precios-diarios.pkl', 'wb'))

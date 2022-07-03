@@ -1,4 +1,10 @@
 """
+Documentación Pipeline:
+Se crea un pipeline de luigi que permite ejecutar todas las funciones creadas anteriormente
+de forma secuencial, teniendo en cuenta las dependencias que puedan existir, lo que permite automotizar y tener control sobre
+la ejecución
+
+
 Construya un pipeline de Luigi que:
 
 * Importe los datos xls

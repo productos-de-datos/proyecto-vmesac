@@ -1,6 +1,9 @@
 '''
-Esta función crea el datalake haciendo uso de la función makedirs de la libreria OS,
-que permite crear directorios intermedios y finales simultaneamente.
+Documentación create_data_lake():
+Esta función crea el datalake, o el directorio de trabajo del proyecto, haciendo uso de la función 
+makedirs de la libreria OS, que permite crear directorios intermedios y finales simultaneamente, estos directorios
+serán usados durente el proyecto para almacenar los archivos que se va generando y los resultados finales.
+
 '''
 
 def create_data_lake():

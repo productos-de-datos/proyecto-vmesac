@@ -1,3 +1,10 @@
+'''
+Documentación transform_data(): Para transformar todos los archivos de excel a csv, se hace uso de la librería pandas
+Dado que los archivos presentan diferentes formatos y caracteristicas se crea un condicional para dada caso y se agrupan
+en él los archivos que cumplan con dichas caracteristicas, después se exporta el archivo usando el método to_csv de pandas 
+
+'''
+
 def transform_data():
     """Transforme los archivos xls a csv.
 

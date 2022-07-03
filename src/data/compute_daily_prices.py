@@ -1,3 +1,9 @@
+'''
+Documentación compute_daily_prices(): se agrupa el archivo por fecha (sin tomarlo como el index)
+y se le calcula la media a los datos con el método grupby de pandas, se exporta el archivo 
+a la carpeta indicada
+'''
+
 def compute_daily_prices():
     """Compute los precios promedios diarios.
 
@@ -14,7 +20,6 @@ def compute_daily_prices():
 
     hourly_prices_df = pd.read_csv('data_lake/cleansed/precios-horarios.csv')
     hourly_prices_df = hourly_prices_df[['fecha', 'precio']]
-    
     daily_prices_df = hourly_prices_df.groupby(['fecha'], as_index = False ).mean()  
     daily_prices_df.to_csv('data_lake/business/precios-diarios.csv', index=False) 
 

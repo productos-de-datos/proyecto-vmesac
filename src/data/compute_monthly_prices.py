@@ -1,3 +1,10 @@
+'''
+Documentación compute_monthly_prices(): se agrupa el archivo por mes, para esto se extraen los ultimos
+7 caracteres del campo fecha que contienen el año y el mes(se añade el 1 simbolicamente para indicar el primer dia del mes en todas las filas)
+se agrupa por este campo y se le calcula la media a los datos con el método grupby de pandas, se exporta el archivo 
+a la carpeta indicada
+'''
+
 def compute_monthly_prices():
     """Compute los precios promedios mensuales.
 

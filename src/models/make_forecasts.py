@@ -1,3 +1,9 @@
+'''
+Documentación make_forecasts(): se leen los datos a pronosticar y se hace uso del archivo .pkl para realizar 
+el pronóstico, se guardan los resultados en el archivo indicado
+
+'''
+
 def make_forecasts():
     """Construya los pronosticos con el modelo entrenado final.
 
@@ -17,8 +23,8 @@ def make_forecasts():
     import numpy as np
 
     # lectura datos
-    df = pd.read_csv('data_lake/business/features/precios-diarios.csv').dropna()
-    #df = df_complete.iloc[7001:-1, :] muestra testing
+    df_complete = pd.read_csv('data_lake/business/features/precios-diarios.csv').dropna()
+    df = df_complete.iloc[7001:-1, :] # sólo muestra testing
 
     # Carga modelo y predice
     pickled_model = pickle.load(open('src/models/precios-diarios.pkl', 'rb'))

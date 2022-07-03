@@ -1,6 +1,10 @@
 """
 Módulo de ingestión de datos.
 -------------------------------------------------------------------------------
+Permite descargar a la carpeta Landing del datalake los archivos que se usaran para el proyecto,
+se hace uso de la librería wget y del m{etodo download para descargar los archivos a través de la url, y la información de cada uno, 
+cómo el año (que hace parte del nombre del archivo) y su extensión. Se creo un ciclo for para hacer cambiar la variable año y 
+un condicional segun el tipo de archivo: xls o xlsx
 
 """
 
@@ -17,7 +21,6 @@ def ingest_data():
     import wget
 
     path = 'data_lake/landing'
-
     different_years = [2016, 2017]
 
     for year_file in range(1995, 2022):
